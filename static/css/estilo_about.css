@@ -1,59 +1,70 @@
-h1{
-    color: aliceblue;
+/* Estilos generales */
+body {
+    background-color: #121212; /* Fondo oscuro para el modo oscuro */
+    color: #ffffff; /* Color de texto base claro */
+    font-family: Arial, sans-serif; /* Fuente de respaldo */
 }
-h2{
+
+h1, h2 {
     color: azure;
+    margin-left: 2%; /* Agregado para consistencia */
 }
 
-
-p{
+p {
     color: aliceblue;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
 }
 
-
-.titulo_about{
-    color: azure;
+.titulo_about {
     font-size: 25px;
     margin-left: 20px;
+    color: azure; /* Movido para mantener la consistencia con h1, h2 */
 }
 
-.foto_mia{
-    width: 340px;
-    height: 340px;
-    margin-left: 20px;
-}
-
-.presentacion_imagen{
+.presentacion_imagen {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 20px;
 }
 
-
-
-.informacion{
+.informacion {
     margin-left: 5%;
+    max-width: 60%; /* Limita el ancho del texto para mejor lectura */
 }
 
-.presentacion{
+.presentacion {
     font-family: cursive;
 }
 
-.titulos_manejo{
+.titulos_manejo {
     margin-left: 2%;
+    margin-top: 40px; /* Espaciado superior */
 }
 
-
-.iconos{
-    margin: 0 auto;
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los iconos */
+    margin: 40px auto; /* Espacio superior e inferior */
 }
 
-
-.logos:hover{
-    cursor: pointer;
-}
-
-.logos{
+.logos {
     width: 150px;
     height: 150px;
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+}
+
+.logos:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+.foto_mia {
+    width: 340px;
+    height: 340px;
+    object-fit: cover; /* Asegura que la imagen no se distorsione */
+    border-radius: 10px; /* Añade bordes redondeados */
+    margin-right: 5%; /* Añadido para el espaciado correcto en la derecha */
 }
