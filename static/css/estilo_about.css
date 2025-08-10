@@ -1,0 +1,59 @@
+h1{
+    color: aliceblue;
+}
+h2{
+    color: azure;
+}
+
+
+p{
+    color: aliceblue;
+}
+
+
+.titulo_about{
+    color: azure;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.foto_mia{
+    width: 340px;
+    height: 340px;
+    margin-left: 20px;
+}
+
+.presentacion_imagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.informacion{
+    margin-left: 5%;
+}
+
+.presentacion{
+    font-family: cursive;
+}
+
+.titulos_manejo{
+    margin-left: 2%;
+}
+
+
+.iconos{
+    margin: 0 auto;
+}
+
+
+.logos:hover{
+    cursor: pointer;
+}
+
+.logos{
+    width: 150px;
+    height: 150px;
+}
