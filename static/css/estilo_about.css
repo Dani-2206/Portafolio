@@ -1,29 +1,27 @@
-/* Estilos generales y tipografía */
 body {
-    background-color: #1a1a2e; /* Azul oscuro y profundo para un tema moderno */
-    color: #e0e0e0; /* Gris claro para una mejor legibilidad */
-    font-family: 'Montserrat', sans-serif; /* Usando una fuente más limpia y moderna */
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 h1, h2 {
-    color: #e94560; /* Un rojo vibrante para los títulos */
+    color: #e94560;
     margin-left: 2%;
-    border-bottom: 2px solid #5d4077; /* Línea sutil para separar el título */
+    border-bottom: 2px solid #5d4077;
     padding-bottom: 5px;
 }
 
 p {
-    color: #b0b0b0; /* Gris más suave para el cuerpo de texto */
+    color: #b0b0b0;
     line-height: 1.8;
 }
 
-/* Navegación y encabezados */
 .titulo_about {
-    font-size: 2.5rem; /* Tamaño de fuente más grande */
-    margin: 40px 0 20px 5%; /* Espaciado ajustado para una mejor presentación */
+    font-size: 2.5rem;
+    margin: 40px 0 20px 5%;
     color: #e94560;
 }
 
@@ -32,41 +30,38 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 40px; /* Espacio más grande entre la imagen y el texto */
+    gap: 40px;
     padding: 20px 5%;
-    flex-wrap: wrap; /* Para que se adapte a pantallas pequeñas */
+    flex-wrap: wrap;
 }
 
 .informacion {
     max-width: 500px;
     text-align: justify;
-    background-color: #2a2e45; /* Fondo más oscuro para destacar la sección */
+    background-color: #2a2e45;
     padding: 20px;
-    border-radius: 15px; /* Bordes redondeados para un estilo moderno */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave para darle profundidad */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .presentacion {
-    /* Se ha cambiado el tipo de letra para esta sección a 'Roboto' */
     font-family: 'Roboto', sans-serif;
     margin-bottom: 20px;
 }
 
-/* Estilo para el enlace de descarga */
 .informacion a {
-    color: #e94560; /* Color del enlace que coincide con los títulos */
-    text-decoration: none; /* Elimina el subrayado */
+    color: #e94560;
+    text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .informacion a:hover {
-    color: #ff99a9; /* Tono más claro al pasar el cursor */
+    color: #ff99a9;
 }
 
-/* Secciones de íconos */
 .titulos_manejo {
-    margin: 40px 0 10px 5%; /* Alineación y espaciado ajustado */
+    margin: 40px 0 10px 5%;
     color: #e94560;
 }
 
@@ -81,7 +76,7 @@ p {
 .logos {
     width: 80px;
     height: 80px;
-    background-color: #5d4077; /* Fondo sutil para los íconos */
+    background-color: #5d4077;
     padding: 10px;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
@@ -95,12 +90,11 @@ p {
     background-color: #715582;
 }
 
-/* Imagen de perfil */
 .foto_mia {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 50%; /* Cambiado a circular para un look más moderno */
-    border: 5px solid #e94560; /* Borde que combina con los títulos */
-    box-shadow: 0 0 20px rgba(233, 69, 96, 0.5); /* Sombra para resaltarla */
+    border-radius: 50%;
+    border: 5px solid #e94560;
+    box-shadow: 0 0 20px rgba(233, 69, 96, 0.5);
 }
