@@ -4,12 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/estilo_proyecto.css">
+
+    <link rel="stylesheet" href="../static/css/estilos.css">
+    <link rel="stylesheet" href="../static/css/estilo_about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
+    <title>Mis Proyectos</title>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/estilos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
-    <title>Proyectos!</title>
+    <title>Mis Proyectos</title>
 </head>
 
 
@@ -18,22 +34,42 @@
         <nav>
             <div class="container-nav">
                 <div class="Navegacion">
-                    <img class="ImagenNAv" src="../static/Img/Logo.jpg" alt="Logo">
+                    <img class="ImagenNAv" src="../static/Img/Logo.jpg" alt="Logo de mi portafolio">
                     <ul>
-                        <li><a href="../index.html">Index</a></li>
-                        <li><a href="acerca.html">Acerca de mi</a></li>
-
-
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="acerca.html">Acerca de mí</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <h2>Bienvenido a mis proyectos</h2>
-    <p>Siente seguro de ver mis poryectos :D </p>
+    <main>
+        <div class="main-content">
+            <div class="proyectos-hero">
+                <h2>Bienvenido a mis proyectos</h2>
+                <p>Aquí puedes ver algunos de los trabajos en los que he participado. ¡Espero que te gusten!</p>
+            </div>
+            
+            <div class="grid-proyectos">
+                <div class="card-proyecto">
+                    <a href="https://proyectoveterinaria.vercel.app/" target="_blank">
+                        <div class="contenido-proyecto proyecto-derecha">
+                            <div class="texto-proyecto">
+                                <h3 class="titulo-proyecto">Proyecto de Veterinaria</h3>
+                                <p>Una aplicación web para la gestión de pacientes de una clínica veterinaria. Desarrollada con tecnologías modernas para una interfaz amigable y un flujo de trabajo eficiente.</p>
+                                <p>tecnologías usadas:React,JavaScript,css,Vercel,PostgresSQL</p>
+                            </div>
+                            <img src="../static/Img/proyectoVete.jpg" alt="Captura de pantalla del Proyecto de Veterinaria">
+                        </div>
+                    </a>
+                </div>
 
 
+                
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

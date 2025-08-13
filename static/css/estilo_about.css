@@ -95,6 +95,5 @@ p {
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #e94560;
-    box-shadow: 0 0 20px rgba(233, 69, 96, 0.5);
+ 
 }
