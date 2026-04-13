@@ -1,89 +1,129 @@
+:root {
+    --bg-main: #060606;
+    --card-bg: #111111;
+    --primary-red: #ff0000;
+    --text-dim: #a0a0a0;
+}
+
 body {
-    background-color: #0d0d12;
+    background-color: var(--bg-main);
+    color: #fff;
     font-family: 'Inter', sans-serif;
-    color: #e2e8f0;
     margin: 0;
 }
 
-.card-link {
-    text-decoration: none !important;
-    color: inherit;
-    display: block;
-    margin-bottom: 30px;
-    outline: none;
+.contenedor-about {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
 }
 
-.card-proyecto {
-    background-color: rgb(10, 0, 27);
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.card-link:hover .card-proyecto {
-    transform: translateY(-8px);
-    border-color: #e94560;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
-}
-
-.contenido-proyecto {
+.perfil-superior {
     display: flex;
-    padding: 30px;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 40px;
+    margin-bottom: 80px;
 }
 
-.texto-proyecto {
-    flex: 1;
+.tarjeta-bio {
+    flex: 2;
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #222;
+    transition: border-color 0.3s ease;
 }
 
-.titulo-proyecto {
-    color: #fff;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    text-decoration: none;
+.tarjeta-bio:hover {
+    border-color: rgba(255, 0, 0, 0.4);
 }
 
-.tecnologias-usadas {
-    font-size: 0.85rem;
-    color: #a78bfa;
-    margin-top: 15px;
-    font-weight: 600;
-}
-
-.contenido-proyecto img {
+.foto-perfil {
     width: 250px;
-    height: 180px;
+    height: 250px;
+    border-radius: 20px;
     object-fit: cover;
-    border-radius: 12px;
+    border: 1px solid #222;
 }
 
-.btn-ver-mas {
+.acciones {
+    margin-top: 30px;
+}
+
+.btn-cv {
     display: inline-block;
-    background-color: #e94560;
-    color: white;
-    padding: 10px 22px;
-    border-radius: 8px;
-    font-weight: bold;
-    margin-top: 20px;
-    transition: background 0.3s ease;
+    padding: 12px 24px;
+    background-color: var(--primary-red);
+    color: #ffffff !important;
     text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
-.card-link:hover .btn-ver-mas {
-    background-color: #ff5e78;
+.btn-cv:hover {
+    background-color: #b30000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
 }
 
-@media (max-width: 768px) {
-    .contenido-proyecto {
+.grid-pilares {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.pilar-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #222;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.pilar-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-red);
+    box-shadow: 0 10px 40px rgba(255, 0, 0, 0.1);
+    background: linear-gradient(145deg, #111111, #1a0505);
+}
+
+.pilar-card h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.pilar-card:hover h3 {
+    color: var(--primary-red);
+}
+
+.pilar-card p {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .perfil-superior {
         flex-direction: column-reverse;
         text-align: center;
     }
 
-    .contenido-proyecto img {
-        width: 100%;
-        height: auto;
+    .grid-pilares {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-perfil {
+        width: 200px;
+        height: 200px;
     }
 }
