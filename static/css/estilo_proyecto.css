@@ -1,13 +1,12 @@
-/* Estilos generales para el cuerpo del portafolio */
+/* --- Estilos base --- */
 body {
-    font-family: 'Playwrite MX Guides', cursive;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #050510;
+    line-height: 1.6;
 }
 
-/* --- Navegación --- */
 .container-nav {
     max-width: 1200px;
     margin: 0 auto;
@@ -45,7 +44,7 @@ body {
     color: #007bff;
 }
 
-/* --- Nuevos estilos para la estructura de Proyectos --- */
+/* --- Main Content --- */
 .main-content {
     display: flex;
     max-width: 1200px;
@@ -63,15 +62,14 @@ body {
 
 .proyectos-hero h2 {
     font-size: 2.5rem;
-    color: #4a4e69;
+    color: #ffff;
+    margin-top: 0;
 }
 
 .proyectos-hero p {
-    font-size: 1.1rem;
-    margin-bottom: 0;
+    color: #ffff;
 }
 
-/* Estilos para la grilla de proyectos */
 .grid-proyectos {
     flex-grow: 1;
     display: flex;
@@ -79,52 +77,70 @@ body {
     gap: 30px;
 }
 
-/* Estilos para cada tarjeta de proyecto */
+/* --- Cards Estilosas --- */
 .card-proyecto {
+    position: relative; /* Indispensable para el link total */
     background-color: rgb(10, 0, 27);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* Capa de enlace para detalles técnicos */
+.link-detalle-total {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Por debajo del botón */
 }
 
 .card-proyecto:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    background-color: rgb(15, 0, 40);
 }
 
-.card-proyecto a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-/* Estilos para el contenido del proyecto */
 .contenido-proyecto {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
-.contenido-proyecto .texto-proyecto {
+.texto-proyecto {
     flex: 1;
-    padding: 20px;
+    padding: 25px 30px;
 }
 
 .titulo-proyecto {
     margin-top: 0;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #fff;
+    font-weight: 600;
+}
+
+.texto-proyecto p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.tecnologias-usadas {
+    font-size: 0.85rem !important;
+    color: #888 !important;
+    font-style: italic;
+    margin-bottom: 20px !important;
 }
 
 .contenido-proyecto img {
-    /* Aquí se ajusta el tamaño de la imagen. */
-    width: 25%; /* Se ha cambiado de 30% a 25% */
+    width: 25%;
     height: auto;
     object-fit: cover;
-    border-radius: 0 10px 10px 0;
 }
 
-/* Estilo para el proyecto con imagen a la derecha */
+/* Alternancia de imagen */
 .proyecto-derecha {
     flex-direction: row-reverse;
 }
@@ -133,41 +149,55 @@ body {
     text-align: right;
 }
 
-.proyecto-derecha img {
-    border-radius: 10px 0 0 10px;
+/* --- Botón Estiloso --- */
+.contenedor-boton {
+    margin-top: 15px;
 }
 
-/* --- Media Queries para responsividad --- */
+.btn-ver-mas {
+    position: relative;
+    z-index: 2; /* Por encima de la capa invisible */
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: #007bff;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-ver-mas:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* --- Responsivo --- */
 @media (max-width: 768px) {
     .main-content {
         flex-direction: column;
-        gap: 20px;
     }
 
     .proyectos-hero {
         width: 100%;
-        padding: 0;
         text-align: center;
     }
 
     .contenido-proyecto {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .contenido-proyecto img {
         width: 100%;
-        border-radius: 10px 10px 0 0;
     }
 
-    .proyecto-derecha {
-        flex-direction: column;
+    .proyecto-derecha .texto-proyecto, 
+    .texto-proyecto {
+        text-align: left;
     }
 
-    .proyecto-derecha img {
-        border-radius: 10px 10px 0 0;
-    }
-
-    .proyecto-derecha .texto-proyecto {
+    .contenedor-boton {
         text-align: left;
     }
 }

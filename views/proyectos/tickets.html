@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/estilos.css">
+    <link rel="stylesheet" href="../../static/css/proyectos/tickets.css">
+    <link rel="stylesheet" href="../../static/css/detalle_individual.css">
+    <title>Detalle - Sistema de Tickets</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container-nav">
+                <div class="Navegacion">
+                    <img class="ImagenNAv" src="../../static/Img/Logo.jpg" alt="Logo">
+                    <ul>
+                        <li><a href="../proyectos.html">← Volver a Proyectos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="detalle-container">
+            <header class="encabezado-detalle">
+                <h1>Sistema de Gestión de Tickets</h1>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>Vite</span>
+                    <span>Express</span>
+                    <span>Mysql</span>
+                    <span>JWT Auth</span>
+                    <span>Bcrypt</span>
+                    <span>Vercel</span>
+                    <span>Aiven</span>
+                </div>
+            </header>
+
+            <div class="grid-detalle">
+                <section class="info-proyecto">
+                    <h2>Descripción Técnica</h2>
+                    <p>Desarrollé una plataforma Full Stack para la gestión centralizada de incidencias técnicas. El sistema permite un flujo de trabajo claro entre los usuarios finales y el equipo de soporte.</p>
+
+                    <h3>Funcionalidades Implementadas</h3>
+                    <ul>
+                        <li><strong>Seguridad de Capas:</strong> Autenticación con JWT y encriptación de contraseñas con Bcrypt para proteger los perfiles de usuario según el rol (Admin/User).</li>
+                        <li><strong>Gestión de Datos:</strong> CRUD completo de usuarios y tickets conectado a Mysql.</li>
+                        <li><strong>Dashboard:</strong> Visualización de métricas de rendimiento y estado de tickets en tiempo real.</li>
+                    </ul>
+                </section>
+
+                <section class="preview-proyecto">
+                    <div class="contenedor-img">
+                        <img src="../../static/Img/sistemaTickets.png" alt="Vista previa del sistema">
+                    </div>
+                    <a href="https://ticket-front-puce.vercel.app/" target="_blank" class="btn-demo">
+                        Ver Demo en Vivo
+                    </a>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

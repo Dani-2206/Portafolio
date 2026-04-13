@@ -1,0 +1,112 @@
+/* Configuración de fuente limpia y moderna */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.detalle-container {
+    background-color: rgb(10, 0, 27);
+    color: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.encabezado-detalle h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.tech-stack span {
+    background-color: rgba(0, 123, 255, 0.2);
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.grid-detalle {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.info-proyecto h2,
+.info-proyecto h3 {
+    color: #007bff;
+    margin-top: 25px;
+}
+
+.info-proyecto p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.info-proyecto ul {
+    padding-left: 20px;
+    color: #ccc;
+}
+
+.info-proyecto ul li {
+    margin-bottom: 10px;
+}
+
+.preview-proyecto {
+    text-align: center;
+}
+
+.contenedor-img {
+    background: #1a1a2e;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    overflow: hidden;
+}
+
+.contenedor-img img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.btn-demo {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    width: 80%;
+}
+
+.btn-demo:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .grid-detalle {
+        grid-template-columns: 1fr;
+    }
+
+    .detalle-container {
+        padding: 20px;
+    }
+
+    .btn-demo {
+        width: 100%;
+    }
+}
